@@ -29,7 +29,7 @@ export default function Root() {
 
                         <ul className="flex align-middle font-mediumrounded-lg  md:space-x-8  flex-row mt-0 bg-white border-gray-700">
                             <li>
-                                <Link to="home" onClick={event => handleClick("/home")} className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100  hover:text-blue-700 md:p-0  dark:text-white ${route === "/home"? "text-blue-700":""}`} aria-current="page">Libros</Link>
+                                <Link to="" onClick={event => handleClick("/")} className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100  hover:text-blue-700 md:p-0  dark:text-white ${route === "/"? "text-blue-700":""}`} aria-current="page">Libros</Link>
                             </li>
                             <li>
                                 <Link to="mylist" onClick={event => handleClick("/mylist")} className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100  hover:text-blue-700 md:p-0  dark:text-white ${route === "/mylist"? "text-blue-700":""}`}>Mi Lista</Link>
