@@ -18,7 +18,7 @@ export default function Root() {
     }
 
     return (
-        <div className="justify-content-start">
+        <div className="flex flex-col justify-center">
             <nav className="">
                 <div className="max-w-screen-xl flex flex-c flex-wrap items-center justify-between mx-auto p-4">
                     <a className="flex items-center space-x-3 rtl:space-x-reverse">

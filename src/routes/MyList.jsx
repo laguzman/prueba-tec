@@ -8,11 +8,9 @@ export default function MyList() {
 
     const [favouriteBooks, setFavouriteBooks] = useState(items || []);
 
-    console.log(items)
-
     return (
         <div>
-            {favouriteBooks.length > 0 ? <BookList className="pt-8 bg-slate-200" books={favouriteBooks} /> : <BookList className="pt-8 bg-slate-200" books={favouriteBooks} /> }
+            {favouriteBooks.length > 0 ? <BookList className="pt-8 bg-slate-200 h-full" books={favouriteBooks} /> : <h1 className="text-center">No hay libros agregados</h1> }
         </div>
 
     );
