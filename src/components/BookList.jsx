@@ -11,8 +11,6 @@ export default function BookList ({ books }) {
         setFilter(genreFilter)
     }
 
-    console.log(items)
-
     useEffect(() => {
         localStorage.setItem('favourite', JSON.stringify(favouriteBooks));
     }, [favouriteBooks]);

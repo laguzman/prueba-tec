@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
 export default function Book ({ book, handleClick, favouriteBooks}) {
-    // const [liked, setLiked] = useState(false)
 
     const likedBook = favouriteBooks.find(currentBook => currentBook.book.ISBN === book.ISBN)
 
