@@ -74,10 +74,6 @@ export default function BookList ({ books }) {
                 >Terror</button>
 
                 {filter ? (
-                    // <button
-                    //
-                    //     className="van-type clear-filters rounded-2xl mx-4"
-                    // >Clear filter</button>
                     <div  className="inline-block my-auto cursor-pointer" >
                         <svg onClick={event => handleFilterChange("")} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -86,10 +82,9 @@ export default function BookList ({ books }) {
                     ) : null}
 
             </div>
-            <div className="grid grid-cols-1 gap-8 pt-10 px-8 bg-slate-200 xl:grid-cols-4 lg:grid-cols-3  sm:grid-cols-2 ">
+            <div className="grid grid-cols-1 gap-8 py-10 px-8 bg-slate-200 xl:grid-cols-4 lg:grid-cols-3  sm:grid-cols-2 ">
                 {filter? bookFilteredRendered:bookRendered}
             </div>
         </div>
-
     )
 }

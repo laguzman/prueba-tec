@@ -18,7 +18,7 @@ export default function Root() {
     }
 
     return (
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center w-screen ">
             <nav className="">
                 <div className="max-w-screen-xl flex flex-c flex-wrap items-center justify-between mx-auto p-4">
                     <a className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -29,10 +29,10 @@ export default function Root() {
 
                         <ul className="flex align-middle font-mediumrounded-lg  md:space-x-8  flex-row mt-0 bg-white border-gray-700">
                             <li>
-                                <Link to="" onClick={event => handleClick("/")} className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100  hover:text-blue-700 md:p-0  dark:text-white ${route === "/"? "text-blue-700":""}`} aria-current="page">Libros</Link>
+                                <Link to="" onClick={event => handleClick("/")} className={`block py-2 px-3 text-gray-900 rounded  hover:text-blue-700 ${route === "/"? "text-blue-700":""}`} aria-current="page">Libros</Link>
                             </li>
                             <li>
-                                <Link to="mylist" onClick={event => handleClick("/mylist")} className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100  hover:text-blue-700 md:p-0  dark:text-white ${route === "/mylist"? "text-blue-700":""}`}>Mi Lista</Link>
+                                <Link to="mylist" onClick={event => handleClick("/mylist")} className={`block py-2 px-3 text-gray-900 rounded hover:text-blue-700 ${route === "/mylist"? "text-blue-700":""}`}>Mi Lista</Link>
                             </li>
                         </ul>
                     </div>
